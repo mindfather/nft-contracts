@@ -10,7 +10,7 @@ import "erc721a/contracts/ERC721A.sol";
  * @dev Simple implementation for a free mint based on ERC721A
  * */
 contract SonoraMaker is ERC721A, Ownable {
-    address public MILADY_MAKER = 0x5Af0D9827E0c53E4799BB226655A1de152A425a5;
+    address public constant MILADY_MAKER = 0x5Af0D9827E0c53E4799BB226655A1de152A425a5;
     uint public constant MAX_SONORA = 444;
     string private _baseTokenURI;
     bool public saleIsActive = false;
