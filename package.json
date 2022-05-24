@@ -1,0 +1,19 @@
+{
+  "name": "sonoramaker",
+  "version": "1.0.0",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle test",
+    "compile": "truffle compile"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.6.0"
+  },
+  "devDependencies": {
+    "erc721a": "^3.3.0",
+    "@truffle/hdwallet-provider": "^2.0.8"
+  }
+}
