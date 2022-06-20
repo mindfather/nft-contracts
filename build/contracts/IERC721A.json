@@ -1087,7 +1087,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.7",
-  "updatedAt": "2022-05-24T03:01:14.217Z",
+  "updatedAt": "2022-05-24T16:50:10.756Z",
   "devdoc": {
     "details": "Interface of an ERC721A compliant contract.",
     "kind": "dev",
