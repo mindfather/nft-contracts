@@ -111,6 +111,6 @@ contract Keybladee is ERC721A, Ownable {
   }
 
   function _baseURI() internal view virtual override returns (string memory) {
-		return _baseTokenURI;
-	}
+    return _baseTokenURI;
+  }
 }
