@@ -11,6 +11,7 @@ import "erc721a/contracts/ERC721A.sol";
  * */
 contract Keybladee is ERC721A, Ownable {
   enum SaleState { CLOSED, PRESALE, SALE };
+  
   address public constant MILADY_MAKER = 0x5Af0D9827E0c53E4799BB226655A1de152A425a5;
   uint public constant MAX_KEYBLADEE = 111;
   uint256 mintPrice = 60000000000000000; //0.06 ETH
@@ -41,14 +42,6 @@ contract Keybladee is ERC721A, Ownable {
     require(
       _totalMinted() < MAX_KEYBLADEE
     , "All keybladees have been minted."
-    );
-    _;
-  }
-
-  modifier onlyOne() {
-    require(
-      balanceOf(msg.sender) < 1
-    , "Save some keybladees for everyone else!"
     );
     _;
   }
